@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+body {
+    height: 100dvh;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    container-type: inline-size;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.underlay {
+    width: 100%;
+    height: 100%;
+    background-image: url(paneer.webp);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text-container {
+    z-index: 5;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 70%;
+}
+
+.text-container > h1 {
+    font-size: 2.5cqw;
+}
+
+.text-container > p {
+    font-size: 1.5cqw;
+}
+
+nav {
+    width: 100%;
+    height: 3rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+nav > ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    list-style-type: none;
+}
+
+nav > ul > li {
+    width: 10rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav > ul > li  > a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    font-size: 25px;
+}
